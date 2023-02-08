@@ -25,12 +25,10 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running AuthIntegrationTest
-[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.791 s <<< FAILURE! - in AuthIntegrationTest
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.67 s  <<< ERROR!
+[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.4 s <<< FAILURE! - in AuthIntegrationTest
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.306 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -44,7 +42,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -88,7 +86,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.672 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.307 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -132,11 +130,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -150,7 +146,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -194,7 +190,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -238,11 +234,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.039 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -256,7 +250,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -300,7 +294,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.039 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -344,11 +338,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.01 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -362,7 +354,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -406,7 +398,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.011 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -450,11 +442,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.012 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -468,7 +458,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -512,7 +502,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.013 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -556,11 +546,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.071 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -574,7 +562,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -618,7 +606,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.071 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.008 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -662,11 +650,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -680,7 +666,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -724,7 +710,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -769,12 +755,10 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
 [INFO] Running MessagingIntegrationTest
-[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.313 s <<< FAILURE! - in MessagingIntegrationTest
+[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.077 s <<< FAILURE! - in MessagingIntegrationTest
 [ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -788,7 +772,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -879,8 +863,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.deleteMessageNonExistentMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -894,7 +876,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -985,8 +967,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.postAccountAndBlankMessage  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1000,7 +980,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1091,8 +1071,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1106,7 +1084,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1194,11 +1172,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.002 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1212,7 +1188,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1256,7 +1232,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.002 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1300,11 +1276,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1318,7 +1292,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1362,7 +1336,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1406,11 +1380,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1424,7 +1396,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1468,7 +1440,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1512,11 +1484,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1530,7 +1500,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1574,7 +1544,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1618,11 +1588,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1636,7 +1604,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1680,7 +1648,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1724,11 +1692,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.181 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1742,7 +1708,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1786,7 +1752,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.181 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1830,11 +1796,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.02 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1848,7 +1812,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1892,7 +1856,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.02 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1936,11 +1900,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -1954,7 +1916,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1998,7 +1960,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2045,8 +2007,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2060,7 +2020,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2151,8 +2111,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2166,7 +2124,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2210,7 +2168,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2257,8 +2215,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2272,7 +2228,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2363,8 +2319,6 @@ java.lang.NullPointerException
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2378,7 +2332,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2422,7 +2376,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2466,11 +2420,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2484,7 +2436,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2527,7 +2479,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2570,11 +2522,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2588,7 +2538,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2631,7 +2581,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2674,11 +2624,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2692,7 +2640,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2735,7 +2683,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2778,11 +2726,9 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2796,7 +2742,7 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessageByAccountIdHandler)
 	The type SocialMediaController does not define getMessageByAccountIdHandler(Context) that is applicable here
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:34)
+	at Controller.SocialMediaController.startAPI(SocialMediaController.java:35)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2888,8 +2834,6 @@ java.lang.NullPointerException
 [ERROR] Errors: 
 [ERROR] AuthIntegrationTest.postLoginEmptyTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2907,8 +2851,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2926,8 +2868,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2945,8 +2885,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterShortPasswordTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2964,8 +2902,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -2983,8 +2919,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3002,8 +2936,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest
 [ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3021,8 +2953,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.deleteMessageNonExistentMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3040,8 +2970,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.deleteMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3059,8 +2987,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3078,8 +3004,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3097,8 +3021,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.getMessageAfterPatchTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3116,8 +3038,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3135,8 +3055,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageBlankTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3154,8 +3072,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3173,8 +3089,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3192,8 +3106,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageTooLongTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3211,8 +3123,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndBlankMessage
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3230,8 +3140,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3249,8 +3157,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3268,8 +3174,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3287,8 +3191,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3306,8 +3208,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3325,8 +3225,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3344,8 +3242,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3363,8 +3259,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3382,8 +3276,6 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest
 [ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problems: 
-	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postLoginHandler)
-	The type SocialMediaController does not define postLoginHandler(Context) that is applicable here
 	The method post(String, Handler) in the type Javalin is not applicable for the arguments (String, this::postCreateMessageHandler)
 	The type SocialMediaController does not define postCreateMessageHandler(Context) that is applicable here
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getAllMessageHandler)
@@ -3405,8 +3297,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  8.439 s
-[INFO] Finished at: 2023-02-08T19:28:19Z
+[INFO] Total time:  4.221 s
+[INFO] Finished at: 2023-02-08T21:36:30Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M7:test (default-test) on project Challenges: 
 [ERROR] 

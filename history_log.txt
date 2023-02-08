@@ -1,7 +1,7 @@
-commit 3d99896c74b0172b5359c2a0334079bbd8c0fbba
+commit 3c5e84c3d20754bb44c23b148781284341de4605
 Author: Tajah Daley <tajdaley@yahoo.com>
-Date:   Wed Feb 8 18:29:29 2023 +0000
+Date:   Wed Feb 8 19:28:06 2023 +0000
 
-    updateSocialMediaController
+    Added endpoint to service
 
- 3 files changed, 319 insertions(+), 1109 deletions(-)
+ 4 files changed, 2443 insertions(+), 327 deletions(-)

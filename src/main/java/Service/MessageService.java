@@ -25,5 +25,9 @@ public class MessageService {
     public Message updateMessageById(int id, Message message) {
         return null;
     }
+
+    public List<Message> getMessageByAccount(int accountId) {
+        return null;
+    }
     
 }

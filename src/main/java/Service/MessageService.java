@@ -13,5 +13,13 @@ public class MessageService {
     public List<Message> getAllMessages() {
         return null;
     }
+
+    public Message getMessageById(int message_id) {
+        return null;
+    }
+
+    public Message deleteMessageId(int deleteMessage) {
+        return null;
+    }
     
 }

@@ -21,5 +21,9 @@ public class MessageService {
     public Message deleteMessageId(int deleteMessage) {
         return null;
     }
+
+    public Message updateMessageById(int id, Message message) {
+        return null;
+    }
     
 }

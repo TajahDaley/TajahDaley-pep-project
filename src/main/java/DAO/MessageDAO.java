@@ -13,7 +13,7 @@ import Util.ConnectionUtil;
 
 public class MessageDAO {
 
-    public Message addmessage(Message message) { 
+    public Message addMessage(Message message) { 
         Connection connection = ConnectionUtil.getConnection();
         try {
             String sql = "INSERT INTO message(posted_by, message_text, time_posted_epoch) VALUES (?, ?, ?);";

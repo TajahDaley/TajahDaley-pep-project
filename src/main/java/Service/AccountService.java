@@ -10,9 +10,9 @@ public class AccountService {
         accountDAO = new AccountDAO();
     }
 
-    public AccountService(AccountDAO accountDAO) {
-        this.accountDAO = accountDAO;
-    }
+    //public AccountService(AccountDAO accountDAO) {
+        //this.accountDAO = accountDAO;
+    //}
 
     public Account addAccount(Account account) {
         if(account.username != "" && account.password.length() >= 4) {

@@ -41,7 +41,7 @@ public class SocialMediaController {
         app.get("/messages/{message_id}", this::getMessageByIdHandler);
         app.delete("/messages/{message_id}", this::deleteMessageByIdHandler);
         app.patch("/messages/{message_id}", this::patchMessageByIdHandler);
-        app.get("/accounts/{account_id}", this::getMessageByAccountIdHandler);
+        app.get("/accounts/{account_id}/messages", this::getMessageByAccountIdHandler);
 
         return app;
     }
@@ -85,27 +85,27 @@ public class SocialMediaController {
     }
 
     private void getAllMessageHandler(Context ctx) {
-        List<Message> message =messageService.getAllMessages();
+        List<Message> message = messageService.getAllMessages();
         ctx.json(message);
 
     }
 
     private void getMessageByIdHandler(Context ctx) throws JsonProcessingException{
         //ObjectMapper mapper = new ObjectMapper();
-        int message_id = Integer.parseInt(ctx.pathParam("message_id"));
-        Message message = messageService.getMessageById(message_id);
-        if (message != null) {
-            ctx.json(message);
+        String message_id = ctx.pathParam(ctx.pathParam("message_id"));
+        Message getMessage = messageService.getMessageById(Integer.parseInt(message_id));
+        if (getMessage != null) {
+            ctx.json(getMessage);
         } else {
-            ctx.status(200);
+            ctx.status(404);
         }
 
     }
 
     private void deleteMessageByIdHandler (Context ctx) throws JsonProcessingException{
         //ObjectMapper mapper = new ObjectMapper();
-        int deleteMessage = Integer.parseInt(ctx.pathParam("message_id"));
-        Message deletedMessage = messageService.deleteMessageById(deleteMessage);
+        String deleteMessage = ctx.pathParam(ctx.pathParam("message_id"));
+        Message deletedMessage = messageService.deleteMessageById(Integer.parseInt(deleteMessage));
         if (deletedMessage != null){
             ctx.json(deletedMessage);
         } else {
@@ -122,14 +122,14 @@ public class SocialMediaController {
         if (updateMessage != null) {
             ctx.json(updateMessage);
         }else {
-            ctx.status(200);
+            ctx.status(400);
         }
 
     }
 
     private void getMessageByAccountIdHandler (Context ctx) throws JsonProcessingException {
-        int accountId = Integer.parseInt(ctx.pathParam("account_id"));
-        List<Message> messages = messageService.getMessageGivenAccountId(accountId);
+        String accountId = ctx.pathParam("account_id");
+        List<Message> messages = messageService.getMessageGivenAccountId(Integer.parseInt(accountId));
         ctx.json(messages);
         
     }

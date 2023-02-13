@@ -113,7 +113,7 @@ public class SocialMediaController {
         Message deletedMessage = messageService.deleteMessageById(deleteMessage);
         if (deletedMessage != null){
             ctx.json(deletedMessage);
-            ctx.status(200);
+            //ctx.status(200);
         } else {
             ctx.status(200);
         }

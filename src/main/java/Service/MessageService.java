@@ -6,18 +6,18 @@ import DAO.MessageDAO;
 import Model.Message;
 
 public class MessageService {
-    private MessageDAO messageDAO;
+    public MessageDAO messageDAO;
 
     public MessageService() {
         messageDAO = new MessageDAO();
     }
 
+    public MessageService(MessageDAO messageDAO) {
+        this.messageDAO = messageDAO;
+    }
+
     public Message addMessage(Message message) {
-        if(message.posted_by >= 1 && message.message_text != "" && message.message_text.length() <= 255) {
-            return messageDAO.addMessage(message);
-        }else {
-            return null;
-        }
+        return messageDAO.addMessage(message);
 
     }
 
@@ -35,17 +35,13 @@ public class MessageService {
         if(deleteMessage != null) {
             return deleteMessage;
         }else {
-            return null;
+            return messageDAO.deleteMessageById(message_id);
         }
 
     }
 
     public Message updateMessageById(int id, Message message) {
-        if(message.message_text != "" && message.message_text.length() <= 255) {
-            return messageDAO.updateMessageById(id, message);
-        } else {
-            return null;
-        }
+        return messageDAO.updateMessageById(id, message);
 
     }
 

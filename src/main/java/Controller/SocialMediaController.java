@@ -54,8 +54,9 @@ public class SocialMediaController {
         ObjectMapper mapper = new ObjectMapper();
         Account account = mapper.readValue(ctx.body(), Account.class);
         Account addedAcount = accountService.addAccount(account);
-        if (addedAcount != null) { 
-            ctx.json(addedAcount);
+        if (account.username != "" && account.password.length() > 4 && addedAcount != null) { 
+            ctx.json(mapper.writeValueAsString(addedAcount));
+            ctx.status(200);
         } else {
             ctx.status(400);
         }
@@ -67,7 +68,8 @@ public class SocialMediaController {
         Account account = mapper.readValue(ctx.body(), Account.class);
         Account loginAccount = accountService.login(account);
         if (loginAccount != null) {
-            ctx.json(loginAccount);
+            ctx.json(mapper.writeValueAsString(loginAccount));
+            ctx.status(200);
         } else {
             ctx.status(401);
         }
@@ -77,25 +79,28 @@ public class SocialMediaController {
         ObjectMapper mapper = new ObjectMapper();
         Message message = mapper.readValue(ctx.body(), Message.class);
         Message createMessage = messageService.addMessage(message);
-        if (createMessage != null) {
-            ctx.json(createMessage);
+        if (message.message_text != "" && message.message_text.length() < 255 && createMessage != null) {
+            ctx.json(mapper.writeValueAsString(createMessage));
+            ctx.status(200);
         } else {
             ctx.status(400);
         }
     }
 
-    private void getAllMessageHandler(Context ctx) {
+    private void getAllMessageHandler(Context ctx) throws JsonProcessingException{
         List<Message> message = messageService.getAllMessages();
         ctx.json(message);
+        ctx.status(200);
 
     }
 
     private void getMessageByIdHandler(Context ctx) throws JsonProcessingException{
         //ObjectMapper mapper = new ObjectMapper();
-        String message_id = ctx.pathParam(ctx.pathParam("message_id"));
-        Message getMessage = messageService.getMessageById(Integer.parseInt(message_id));
+        Int message_id = Integer.parseInt(ctx.pathParam("message_id"));
+        Message getMessage = messageService.getMessageById(message_id);
         if (getMessage != null) {
             ctx.json(getMessage);
+            ctx.status(200);
         } else {
             ctx.status(404);
         }
@@ -104,10 +109,11 @@ public class SocialMediaController {
 
     private void deleteMessageByIdHandler (Context ctx) throws JsonProcessingException{
         //ObjectMapper mapper = new ObjectMapper();
-        String deleteMessage = ctx.pathParam(ctx.pathParam("message_id"));
-        Message deletedMessage = messageService.deleteMessageById(Integer.parseInt(deleteMessage));
+        int deleteMessage = Integer.parseInt(ctx.pathParam("message_id"));
+        Message deletedMessage = messageService.deleteMessageById(deleteMessage);
         if (deletedMessage != null){
             ctx.json(deletedMessage);
+            ctx.status(200);
         } else {
             ctx.status(200);
         }

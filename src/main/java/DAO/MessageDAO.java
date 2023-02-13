@@ -67,8 +67,8 @@ public class MessageDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                Message message = new Message(resultSet.getInt("message_id"), resultSet.getInt("posted_by"), resultSet.getString("message_text"), resultSet.getLong("time_posted_epoch"));
-                return message;
+                Message messageById = new Message(resultSet.getInt("message_id"), resultSet.getInt("posted_by"), resultSet.getString("message_text"), resultSet.getLong("time_posted_epoch"));
+                return messageById;
             }
 
         } catch (SQLException e) {
@@ -81,7 +81,7 @@ public class MessageDAO {
     public Message deleteMessageById (int message_id) { 
         Connection connection = ConnectionUtil.getConnection();
         try{ 
-            String sql = "DELETE FROM message WHERE message_id = ?; ";
+            String sql = "DELETE FROM message WHERE message_id = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setInt(1, message_id);
@@ -123,15 +123,17 @@ public class MessageDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                Message message = new Message(resultSet.getInt("message_id"), resultSet.getInt("posted_by"), resultSet.getString("message_text"), resultSet.getLong("time_posted_epoch"));
-                messages.add(message);
+                Message messageById = new Message(resultSet.getInt("message_id"), resultSet.getInt("posted_by"), resultSet.getString("message_text"), resultSet.getLong("time_posted_epoch"));
+                messages.add(messageById);
             }
+            return messages;
+
 
         } catch(SQLException e) { 
             System.out.println(e.getMessage());
         }
         
-        return messages;
+        return null;
     }
     
 }

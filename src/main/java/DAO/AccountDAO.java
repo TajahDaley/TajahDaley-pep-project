@@ -1,10 +1,11 @@
 package DAO;
 
-import java.beans.Statement;
+//import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import Model.Account;
 import Util.ConnectionUtil;
@@ -36,7 +37,7 @@ public class AccountDAO {
     public Account loginAccount (Account account) {
         Connection connection = ConnectionUtil.getConnection();
         try {
-            String sql = "SELCT * FROM account WHERE username = ? AND password = ?;";
+            String sql = "SELECT * FROM account WHERE username = ? AND password = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setString(1, account.getUsername());

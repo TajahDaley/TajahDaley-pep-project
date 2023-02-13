@@ -29,12 +29,24 @@ public class MessageService {
         return messageDAO.getMessageById(message_id);
     }
 
-    public Message deleteMessageById(int deleteMessage) {
-        return null;
+    public Message deleteMessageById(int message_id) {
+        Message deleteMessage = messageDAO.getMessageById(message_id);
+        messageDAO.deleteMessageById(message_id);
+        if(deleteMessage != null) {
+            return deleteMessage;
+        }else {
+            return null;
+        }
+
     }
 
     public Message updateMessageById(int id, Message message) {
-        return null;
+        if(message.message_text != "" && message.message_text.length() <= 255) {
+            return messageDAO.updateMessageById(id, message);
+        } else {
+            return null;
+        }
+
     }
 
     public List<Message> getMessageGivenAccountId(int accountId) {

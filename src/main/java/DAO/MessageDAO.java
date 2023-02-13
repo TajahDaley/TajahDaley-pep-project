@@ -1,10 +1,11 @@
 package DAO;
 
-import java.beans.Statement;
+//import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,7 +78,7 @@ public class MessageDAO {
         return null;
     }
 
-    public Message deleteMessagById (int message_id) { 
+    public Message deleteMessageById (int message_id) { 
         Connection connection = ConnectionUtil.getConnection();
         try{ 
             String sql = "DELETE FROM message WHERE message_id = ?; ";
